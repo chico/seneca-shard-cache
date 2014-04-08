@@ -24,7 +24,7 @@ module.exports = function( options ) {
   function act(args, done) {
     var toact = Object.create(args)
 
-    toact.shard = shards.resolve(args.key);
+    toact.shard = shards.resolve('' + args.key);
 
     seneca.act(toact, function(err, result) {
       if (err) {return done(err);}
