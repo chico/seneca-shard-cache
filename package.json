@@ -1,0 +1,27 @@
+{
+  "name": "seneca-shard-cache",
+  "version": "0.0.1",
+  "description": "Shard cache for Seneca",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/"
+  },
+  "website": "https://github.com/chico/seneca-shard-cache",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chico/seneca-shard-cache.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chico/seneca-shard-cache/issues"
+  },
+  "author": "Chico Charlesworth",
+  "license": "ISC",
+  "dependencies": {
+    "seneca": "~0.5.15",
+    "sharder": "0.0.2",
+    "async": "~0.2.10"
+  },
+  "devDependencies": {
+    "mocha": "~1.18.2"
+  }
+}
