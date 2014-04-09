@@ -41,7 +41,7 @@ module.exports = function( options ) {
 
     // TODO use sharder once it can generate a shard key from an existing key
     // toact.shard = shards.resolve('' + args.key);
-    toact.shard = chash.getNode(args.key);
+    toact.shard = chash.getNode('' + args.key);
     console.log('shard: ' + toact.shard);
 
     seneca.act(toact, function(err, result) {
