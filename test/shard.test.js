@@ -1,9 +1,19 @@
 /* Copyright (c) 2014 Chico Charlesworth, MIT License */
 'use strict';
 
-var seneca = require('seneca')
+var uuid = require('uuid')
+var sharder = require('sharder')
 var assert = require('assert')
 
-// TODO
+describe('shard-cache', function() {
+
+  it('sharder', function( done ){
+    var shards = sharder({shards: { 42: { append: true } }});
+    var key = shards.generate();
+    console.log(shards.resolve(key));
+    done();
+  });
+
+});
 
 
