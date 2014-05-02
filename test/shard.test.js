@@ -8,11 +8,13 @@ var assert = require('assert')
 describe('shard-cache', function() {
 
   it('sharder', function( done ){
-    var shards = sharder({shards: { 42: { append: true } }});
-    var key = shards.generate();
-    console.log(shards.resolve(key));
+    var shards = sharder({cache:true, shards: { 1: {}, 2: {} }});
+    var key = shards.generate(new Buffer([1, 2]));
+    assert.equal(1, shards.resolve(key).id);
     done();
   });
+
+  // TODO Add test for testing cache set and get
 
 });
 

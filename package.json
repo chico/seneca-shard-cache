@@ -1,6 +1,6 @@
 {
   "name": "seneca-shard-cache",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Shard cache for Seneca",
   "main": "index.js",
   "scripts": {
@@ -18,9 +18,7 @@
   "license": "ISC",
   "dependencies": {
     "seneca": "~0.5.15",
-    "sharder": "0.0.2",
-    "async": "~0.2.10",
-    "fash": "~2.3.1"
+    "sharder": "0.1.0"
   },
   "devDependencies": {
     "mocha": "~1.18.2",
